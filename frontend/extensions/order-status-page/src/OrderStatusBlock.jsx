@@ -37,6 +37,7 @@ function App() {
       const data=await response.json();
       console.log(data)
       const customerID=data?.data?.customer?.id?.split("Customer/")[1];
+      console.log(customerID);
       setCustomer(customerID);
     }
 
